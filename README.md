@@ -1,78 +1,87 @@
-# React + TypeScript + Vite
+````md
+# Engez
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and responsive task management dashboard built with React, TypeScript, and Tailwind CSS.
 
-Currently, two official plugins are available:
+## Preview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+![Engez Dashboard](./public/images/engez 2026-09-30 214626.png)
 
-## React Compiler
+## Features
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- Responsive dashboard layout
+- Task overview with:
+  - Total tasks
+  - Completed tasks
+  - Pending tasks
+- Recent tasks table
+- Responsive navigation bar
+- Mobile navigation menu
+- Reusable React components
+- Clean and minimal user interface
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+## Tech Stack
 
-## Expanding the ESLint configuration
+- React
+- TypeScript
+- Tailwind CSS
+- React Router
+- Vite
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Project Structure
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+```text
+src/
+├── components/
+│   ├── Card.tsx
+│   ├── HeroSection.tsx
+│   ├── Navbar.tsx
+│   └── TaskList.tsx
+│
+├── pages/
+│   └── DashboardPage.tsx
+│
+└── ...
+````
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Getting Started
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Clone the repository
 
+```bash
+git clone YOUR_REPOSITORY_URL
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+### Navigate to the project
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+cd engez
+```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Install dependencies
 
+```bash
+npm install
+```
+
+### Run the development server
+
+```bash
+npm run dev
+```
+
+## Future Improvements
+
+* Add task creation and editing
+* Add task deletion
+* Add task filtering and sorting
+* Add authentication
+* Connect the application to a backend API
+* Store tasks in a database
+
+## Author
+
+Dina Tarek
+
+```
 ```
