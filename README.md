@@ -55,7 +55,7 @@ git clone YOUR_REPOSITORY_URL
 ### Navigate to the project
 
 ```bash
-cd engez
+cd simple-dashboard_page
 ```
 
 ### Install dependencies
