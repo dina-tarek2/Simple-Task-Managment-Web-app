@@ -5,7 +5,7 @@ A simple and responsive task management dashboard built with React, TypeScript, 
 
 ## Preview
 
---- ![Engez Dashboard](./public/images/engez.png)
+![Engez Dashboard](./public/images/dashboard.png)
 
 ## Features
 
